@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  box-sizing: border-box;
+  background: #c850c0;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  width: 30%;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form input {
+  width: 80%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+
+}
+
+.form button {
+  width: 80%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FFCC70;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  /* Your existing styles */
+  padding: 20px; /* Add padding to the container */
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.form input {
+  /* Your existing styles */
+  padding: 10px; /* Add padding to the input field */
+}
+
+.form button {
+  /* Your existing styles */
+  padding: 10px; /* Add padding to the button */
+}
+
+.list-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px; /* Add padding to the to-do list items */
+  margin-bottom: 10px;
+}
+
+#list li .delete {
+  cursor: pointer;
+  padding: 8px; /* Add padding to the delete button */
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 3px;
+}
+
+#list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* index.css */
+
+/* Your existing styles */
+
+.form select {
+  width: 80%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#list li[data-priority="low"] {
+  border-left: 4px solid #28a745; /* Green border for low priority */
+}
+
+#list li[data-priority="medium"] {
+  border-left: 4px solid #ffc107; /* Yellow border for medium priority */
+}
+
+#list li[data-priority="high"] {
+  border-left: 4px solid #dc3545; /* Red border for high priority */
+}
